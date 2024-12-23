@@ -29,33 +29,7 @@ export class MainComponent implements OnInit {
   }
 
 
-  goToChat(username: any) {
-    this.chatService.getChatByFirstUserNameAndSecondUserName(username, sessionStorage.getItem("username")).subscribe(
-      (data) => {
-        this.chatId = data.chatId;
-        sessionStorage.setItem("chatId", this.chatId);
-
-        sessionStorage.setItem("gotochat", "false");
-        this.router.navigateByUrl('/chat');
-      },
-      (error) => {
-        if (error.status == 404) {
-          this.chatObj.firstUserName = sessionStorage.getItem("username");
-          this.chatObj.secondUserName = username;
-          this.chatService.createChatRoom(this.chatObj).subscribe(
-            (data) => {
-              this.chatData = data;
-              this.chatId = this.chatData.chatId;
-              sessionStorage.setItem("chatId", this.chatData.chatId);
-
-              sessionStorage.setItem("gotochat", "false");
-              this.router.navigateByUrl('/chat');
-            })
-        } else {
-
-        }
-      });
-
-  }
+ 
+  
 
 }

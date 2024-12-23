@@ -1,15 +1,81 @@
-.user {
-    border: 1px solid blueviolet;
-    border-radius: 6px;
-    margin: 4px 4px 4px 4px;
-    background: cornsilk;
+/* User card styles */
+
+.user-card {
+    border: 2px solid #6a5acd;
+    /* Modernized blueviolet */
+    border-radius: 10px;
+    background-color: #fff9e6;
+    /* Softer cornsilk */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
     display: flex;
+    flex-direction: column;
+    /* Stack icon and name vertically */
     justify-content: center;
+    align-items: center;
+    padding: 20px;
     text-align: center;
+    margin: 10px;
+    /* Add spacing between cards */
 }
 
-.user:hover {
-    border: 1px solid red;
-    background: gainsboro;
-    /* box-shadow: 0 2px 1px 0 (0.5); */
+.user-card:hover {
+    border-color: #ff4500;
+    /* Red-orange for hover effect */
+    background-color: #f0f0f0;
+    /* Light gray */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Remove button-like appearance */
+
+.user-card {
+    border: none;
+    /* Optional if border is still present */
+    outline: none;
+    /* Remove focus outline */
+    box-shadow: none;
+    /* Remove shadow if any */
+}
+
+
+/* User icon styles */
+
+.user-icon {
+    font-size: 2.5rem;
+    /* Large icon size */
+    color: #6a5acd;
+    /* Same as border color */
+    margin-bottom: 10px;
+}
+
+
+/* User name styles */
+
+.user-content {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+
+/* Add responsive spacing */
+
+@media (max-width: 768px) {
+    .user-card {
+        margin: 15px auto;
+        /* Larger spacing for smaller screens */
+    }
+}
+
+.disabled {
+    pointer-events: none;
+    /* Désactive le clic */
+    opacity: 0.5;
+    /* Rend l'élément visuellement désactivé */
+    cursor: not-allowed;
+    /* Change le curseur */
 }

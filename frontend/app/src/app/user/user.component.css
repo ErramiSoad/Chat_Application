@@ -1,7 +1,115 @@
-.feild {
-    font-size: 14px;
+/* Navigation Container */
+
+.custom-navbar {
+    background-color: #4b6f93;
+    /* Couleur principale */
+    border-bottom: 3px solid #3498db;
+    /* Liseré de démarcation */
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Ombre */
+}
+
+
+/* Brand Title */
+
+.custom-navbar .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ecf0f1;
+    transition: color 0.3s;
+}
+
+.custom-navbar .navbar-brand:hover {
+    color: #3498db;
+}
+
+
+/* Navigation Links */
+
+.custom-navbar .nav-link {
+    color: #bdc3c7;
+    font-size: 1.1rem;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+
+/* Navigation Buttons */
+
+.nav-buttons {
+    margin-left: auto;
+    /* Repousse les boutons à droite */
     display: flex;
-    text-align: center;
-    justify-content: center;
     align-items: center;
+    /* Aligne verticalement avec le reste du contenu */
+}
+
+.nav-buttons .btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.custom-btn-primary {
+    background-color: #3498db;
+    color: #fff;
+    border: 2px solid #3498db;
+}
+
+.custom-btn-primary:hover {
+    background-color: #fff;
+    color: #3498db;
+}
+
+.custom-btn-secondary {
+    background-color: #2ecc71;
+    color: #fff;
+    border: 2px solid #2ecc71;
+}
+
+.custom-btn-secondary:hover {
+    background-color: #fff;
+    color: #2ecc71;
+}
+
+.custom-btn-success {
+    background-color: #27ae60;
+    color: #fff;
+    border: 2px solid #27ae60;
+}
+
+.custom-btn-success:hover {
+    background-color: #fff;
+    color: #27ae60;
+}
+
+.custom-btn-danger {
+    background-color: #e74c3c;
+    color: #fff;
+    border: 2px solid #e74c3c;
+}
+
+.custom-btn-danger:hover {
+    background-color: #fff;
+    color: #e74c3c;
+}
+
+
+/* Toggler Icon (Small Screens) */
+
+.custom-navbar .navbar-toggler {
+    border: 2px solid #3498db;
+    color: #ecf0f1;
+}
+
+.custom-navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgb(236, 240, 241)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }

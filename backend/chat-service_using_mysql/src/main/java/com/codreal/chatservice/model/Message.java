@@ -1,8 +1,6 @@
 package com.codreal.chatservice.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-import org.hibernate.annotations.ManyToAny;
 
 import java.util.Date;
 
